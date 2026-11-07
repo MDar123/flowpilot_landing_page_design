@@ -13,6 +13,8 @@ A dark, animated SaaS landing page for **FlowPilot**, an AI automation agency th
 
 Scroll-reveal and entrance animations use [Motion](https://motion.dev) and respect the visitor's *reduce motion* setting.
 
+**Live site:** https://flowpilot-landing-page-iota.vercel.app
+
 ## Tech stack
 
 Next.js 15 (App Router) · React 19 · TypeScript · Tailwind CSS v4 · Motion · Three.js · Lucide icons
@@ -30,7 +32,7 @@ Open http://localhost:3000.
 
 - Replace the placeholder testimonials and stats in `src/components/sections/`
 - Add the official GoHighLevel logo to `public/logos/` (currently an "HL" text mark)
-- Set `metadataBase` in `src/app/layout.tsx` to the live domain so social previews resolve
+- If you move to a custom domain, update `siteUrl` in `src/app/layout.tsx` so social previews keep resolving
 
 ---
 

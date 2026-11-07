@@ -10,10 +10,29 @@ const grotesk = Space_Grotesk({
   weight: ["500", "600", "700"],
 });
 
+const siteUrl = "https://flowpilot-landing-page-iota.vercel.app";
+const title = "FlowPilot AI — AI Automation for Growing Businesses";
+const description =
+  "FlowPilot builds AI agents and automated workflows on Make, Zapier, n8n and GoHighLevel so your team can stop doing busywork.";
+
 export const metadata: Metadata = {
-  title: "FlowPilot AI — AI Automation for Growing Businesses",
-  description:
-    "FlowPilot builds AI agents and automated workflows on Make, Zapier, n8n and GoHighLevel so your team can stop doing busywork.",
+  // Absolute base so the share image and links resolve on WhatsApp, LinkedIn, X, Slack…
+  metadataBase: new URL(siteUrl),
+  title,
+  description,
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    url: "/",
+    siteName: "FlowPilot",
+    title,
+    description,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
 };
 
 export default function RootLayout({
